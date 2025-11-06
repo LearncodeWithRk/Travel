@@ -81,7 +81,7 @@ export default function Home() {
             data-ai-hint={heroImage.imageHint}
           />
         )}
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/60" />
         <div className="container relative z-10 mx-auto flex h-full items-center px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="max-w-xl text-white text-center md:text-left">
@@ -90,7 +90,7 @@ export default function Home() {
               </h1>
               <p className="mt-4 text-lg">Discover your next great adventure, become an explorer to get started.</p>
               <Button asChild className="mt-8" size="lg">
-                <Link href="/destinations">Discover More</Link>
+                <Link href="/contact">Contact Us</Link>
               </Button>
             </div>
              <div className="md:max-w-md md:ml-auto w-full">
