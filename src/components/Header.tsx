@@ -12,7 +12,6 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/destinations', label: 'Destinations' },
   { href: '/packages', label: 'Packages' },
-  { href: '/itinerary-generator', label: 'AI Itinerary' },
 ];
 
 export function Header() {
