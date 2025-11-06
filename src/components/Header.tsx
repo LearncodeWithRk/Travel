@@ -14,7 +14,6 @@ const navLinks = [
   { href: '/destinations', label: 'Destination' },
   { href: '/packages', label: 'Tours' },
   { href: '/contact', label: 'Contact' },
-  { href: '/blog', label: 'Blog' },
 ];
 
 export function Header() {

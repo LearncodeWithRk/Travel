@@ -34,24 +34,6 @@ const popularDestinations = [
   { slug: 'dest-venice', name: 'Venice', location: 'Italy' },
 ];
 
-const blogPosts = [
-  {
-    slug: 'blog-post-1',
-    title: 'Travel Inns: Navigating The World’s Wonders',
-    date: '27 July, 2024',
-  },
-  {
-    slug: 'blog-post-2',
-    title: 'Exploring The World, One Adventure At A Time',
-    date: '28 July, 2024',
-  },
-  {
-    slug: 'blog-post-3',
-    title: 'Fast Food In Your Area: A Traveler’s Guide',
-    date: '29 July, 2024',
-  },
-];
-
 export default function Home() {
   const heroImage = PlaceHolderImages.find((p) => p.id === 'hero-plane');
   return (
@@ -204,48 +186,6 @@ export default function Home() {
                       <MapPin className="mr-1 h-4 w-4" />
                       <span>{dest.location}</span>
                     </div>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Blog Section */}
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <p className="font-semibold uppercase tracking-wider text-primary">
-              Travel Updates
-            </p>
-            <h2 className="mt-2 text-3xl font-bold md:text-4xl">
-              Blog For Travel Updates
-            </h2>
-          </div>
-          <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
-            {blogPosts.map((post) => {
-              const image = PlaceHolderImages.find((p) => p.id === post.slug);
-              return (
-                <Card key={post.slug} className="overflow-hidden">
-                  {image && (
-                    <Image
-                      src={image.imageUrl}
-                      alt={post.title}
-                      width={400}
-                      height={250}
-                      className="h-48 w-full object-cover"
-                      data-ai-hint={image.imageHint}
-                    />
-                  )}
-                  <CardContent className="p-4">
-                    <p className="text-sm text-muted-foreground">{post.date}</p>
-                    <h3 className="mt-2 text-lg font-semibold">
-                      {post.title}
-                    </h3>
-                    <Button variant="link" className="mt-2 p-0">
-                      Read More <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
                   </CardContent>
                 </Card>
               );
