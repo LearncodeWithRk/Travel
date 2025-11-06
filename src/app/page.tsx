@@ -70,7 +70,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="relative h-[80vh] w-full">
+      <section className="relative h-auto w-full py-16 md:h-[80vh] md:py-0">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -93,7 +93,7 @@ export default function Home() {
                 <Link href="/destinations">Discover More</Link>
               </Button>
             </div>
-            <div className="hidden md:block">
+            <div className="block">
               <Card>
                 <BookingForm />
               </Card>
