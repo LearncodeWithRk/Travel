@@ -53,7 +53,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-secondary/20">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
-                <Image src="https://picsum.photos/seed/travelers/600/700" alt="Two travelers looking at a map" width={600} height={700} className="rounded-lg shadow-xl" data-ai-hint="travelers map" />
+                <Image src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0cmF2ZWx8ZW58MHx8fHwxNzYyNDIxNTY2fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Two travelers looking at a map" width={600} height={700} className="rounded-lg shadow-xl" data-ai-hint="travelers map" />
                 <div className="absolute -bottom-8 -left-8 bg-primary text-primary-foreground p-6 rounded-lg shadow-lg">
                     <p className="text-5xl font-bold">26+</p>
                     <p>Years of Experience</p>
