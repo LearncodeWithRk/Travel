@@ -68,7 +68,7 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent>
                       <WhatsAppButton 
-                          phoneNumber="+1234567890" 
+                          phoneNumber="919599695872" 
                           message="Hello Tourigo! I have a question about planning a trip."
                           className="w-full"
                           buttonText="Chat on WhatsApp"
