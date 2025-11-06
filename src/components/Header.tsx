@@ -47,7 +47,6 @@ export function Header() {
               <NavLink key={link.href} {...link} />
             ))}
           </nav>
-          <Button>Sign In</Button>
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" className="md:hidden">
