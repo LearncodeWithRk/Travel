@@ -45,7 +45,7 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex md:mr-6">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="text-2xl font-bold">Tourigo</span>
+            <span className="text-2xl font-bold ml-8">Tourigo</span>
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-end gap-4">
@@ -62,9 +62,9 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
-              <SheetHeader className="sr-only">
-                <SheetTitle>Mobile Menu</SheetTitle>
-                <SheetDescription>
+              <SheetHeader>
+                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                <SheetDescription className="sr-only">
                   Navigation links for Tourigo website.
                 </SheetDescription>
               </SheetHeader>
