@@ -1,15 +1,111 @@
 {
   "placeholderImages": [
     {
-      "id": "hero",
-      "description": "A stunning tropical beach with clear water and a boat",
-      "imageUrl": "https://images.unsplash.com/photo-1546536582-cdabb1daf509?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0cm9waWNhbCUyMGJlYWNofGVufDB8fHx8MTc2MjMzNTA1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "id": "hero-1",
+      "description": "The famous blue-domed churches of Oia, Santorini, overlooking the caldera.",
+      "imageUrl": "https://images.unsplash.com/photo-1596933144889-c15043a9ddde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzYW50b3JpbmklMjBncmVlY2V8ZW58MHx8fHwxNzYyNDE5ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "santorini greece"
+    },
+    {
+      "id": "hero-2",
+      "description": "Tropical beach with crystal clear water",
+      "imageUrl": "https://images.unsplash.com/photo-1535262412227-85541e910204?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cm9waWNhbCUyMGJlYWNofGVufDB8fHx8MTc2MjMzNTA1OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tropical beach"
+    },
+    {
+      "id": "hero-3",
+      "description": "The iconic Gates of Heaven temple in Bali with a mountain view.",
+      "imageUrl": "https://images.unsplash.com/photo-1704253411612-e4deb715dcd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWxpJTIwdGVtcGxlfGVufDB8fHx8MTc2MjQxOTg2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bali temple"
+    },
+    {
+      "id": "hero-4",
+      "description": "A person relaxing on a boat",
+      "imageUrl": "https://images.unsplash.com/photo-1576253688351-f373aa77bd2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxib2F0JTIwcmVsYXh8ZW58MHx8fHwxNzYyNDIwNDg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "boat relax"
+    },
+    {
+      "id": "hero-5",
+      "description": "A view of the ocean from a cliff",
+      "imageUrl": "https://images.unsplash.com/photo-1719456490989-acd23c816cf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvY2VhbiUyMGNsaWZmfGVufDB8fHx8MTc2MjQyMDQ4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ocean cliff"
+    },
+    {
+      "id": "category-pyramid",
+      "description": "Pyramids of Giza",
+      "imageUrl": "https://images.unsplash.com/photo-1695116647812-0bc535856eb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxweXJhbWlkcyUyMGdpemF8ZW58MHx8fHwxNzYyMzUzMTc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pyramids giza"
+    },
+    {
+      "id": "category-mountain",
+      "description": "Mountain range",
+      "imageUrl": "https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMHJhbmdlfGVufDB8fHx8MTc2MjQyMDQ4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain range"
+    },
+    {
+      "id": "category-mosque",
+      "description": "A grand mosque",
+      "imageUrl": "https://images.unsplash.com/photo-1650973249918-87162b4eca34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncmFuZCUyMG1vc3F1ZXxlbnwwfHx8fDE3NjIzNzcxNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grand mosque"
+    },
+    {
+      "id": "category-desert",
+      "description": "Sand dunes in a desert",
+      "imageUrl": "https://images.unsplash.com/photo-1629659343117-237c364e69ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVzZXJ0JTIwZHVuZXN8ZW58MHx8fHwxNzYyNDAzMDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desert dunes"
+    },
+    {
+      "id": "category-tower",
+      "description": "Eiffel Tower",
+      "imageUrl": "https://images.unsplash.com/photo-1439393161192-32360eb753f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlaWZmZWwlMjB0b3dlcnxlbnwwfHx8fDE3NjIzMzM2Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "eiffel tower"
+    },
+    {
+      "id": "category-beach",
+      "description": "A sunny beach",
+      "imageUrl": "https://images.unsplash.com/photo-1579493933703-70473cdf84f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdW5ueSUyMGJlYWNofGVufDB8fHx8MTc2MjM3MDk4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sunny beach"
+    },
+    {
+      "id": "dest-great-barrier",
+      "description": "Great Barrier Reef",
+      "imageUrl": "https://images.unsplash.com/photo-1650190460921-aa02f0528ff0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxncmVhdCUyMGJhcnJpZXJ8ZW58MHx8fHwxNzYyNDIwNDg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "great barrier"
+    },
+    {
+      "id": "dest-swiss-alps",
+      "description": "Swiss Alps",
+      "imageUrl": "https://images.unsplash.com/photo-1527668752968-14dc70a27c95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzd2lzcyUyMGFscHN8ZW58MHx8fHwxNzYyNDE1MDI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "swiss alps"
+    },
+    {
+      "id": "dest-santorini",
+      "description": "Santorini, Greece",
+      "imageUrl": "https://images.unsplash.com/photo-1580225495234-00e84e19c85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzYW50b3JpbmklMjBncmVlY2V8ZW58MHx8fHwxNzYyNDE5ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "santorini greece"
+    },
+    {
+      "id": "dest-venice",
+      "description": "Venice, Italy",
+      "imageUrl": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx2ZW5pY2UlMjBpdGFseXxlbnwwfHx8fDE3NjI0MjA0ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "venice italy"
+    },
+    {
+      "id": "booking-promo",
+      "description": "A view from a hotel balcony",
+      "imageUrl": "https://images.unsplash.com/photo-1693585576674-2e1b7166f583?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxob3RlbCUyMGJhbGNvbnl8ZW58MHx8fHwxNzYyMzE3NDUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hotel balcony"
+    },
+    {
+      "id": "client-review",
+      "description": "A happy tourist",
+      "imageUrl": "https://images.unsplash.com/photo-1613605480802-c4027a863f5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYXBweSUyMHRvdXJpc3R8ZW58MHx8fHwxNzYyNDIwNDg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy tourist"
     },
     {
       "id": "bali-indonesia",
       "description": "The iconic Gates of Heaven temple in Bali with a mountain view.",
-      "imageUrl": "https://images.unsplash.com/photo-1584493737987-b2f0c75a8729?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiYWxpJTIwdGVtcGxlfGVufDB8fHx8MTc2MjQxOTg2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1530080338378-25af8876ae2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYWxpJTIwdGVtcGxlfGVufDB8fHx8MTc2MjQxOTg2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bali temple"
     },
     {
@@ -21,31 +117,31 @@
     {
       "id": "santorini-greece",
       "description": "The famous blue-domed churches of Oia, Santorini, overlooking the caldera.",
-      "imageUrl": "https://images.unsplash.com/photo-1722581174702-706197ded63d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzYW50b3JpbmklMjBncmVlY2V8ZW58MHx8fHwxNzYyNDE5ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580225495234-00e84e19c85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzYW50b3JpbmklMjBncmVlY2V8ZW58MHx8fHwxNzYyNDE5ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "santorini greece"
     },
     {
       "id": "itinerary-promo",
       "description": "A person looking at a map planning a trip.",
-      "imageUrl": "https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0cmF2ZWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjI0MTk4NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1499591934245-40b55745b905?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0cmF2ZWwlMjBwbGFubmluZ3xlbnwwfHx8fDE3NjI0MTk4NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "travel planning"
     },
     {
       "id": "bali-adventure",
       "description": "A person surfing a wave in Bali.",
-      "imageUrl": "https://images.unsplash.com/photo-1575460110246-3d85937a40e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXJmaW5nJTIwYmFsaXxlbnwwfHx8fDE3NjI0MTk4NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1653382884323-c6038c35e8da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdXJmaW5nJTIwYmFsaXxlbnwwfHx8fDE3NjI0MTk4NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "surfing bali"
     },
     {
       "id": "kyoto-cultural-immersion",
       "description": "A woman in a traditional kimono walking through a Japanese garden.",
-      "imageUrl": "https://images.unsplash.com/photo-1543753728-c988ab017300?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxraW1vbm8lMjBnYXJkZW58ZW58MHx8fHwxNzYyNDE5ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1714912073520-f5683f3edbf4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxraW1vbm8lMjBnYXJkZW58ZW58MHx8fHwxNzYyNDE5ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kimono garden"
     },
     {
       "id": "santorini-romance",
       "description": "A couple enjoying the sunset in Santorini.",
-      "imageUrl": "https://images.unsplash.com/photo-1669203408570-4140ee21f211?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYW50b3JpbmklMjBzdW5zZXR8ZW58MHx8fHwxNzYyNDE5ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1509321528270-797a4f7c1485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzYW50b3JpbmklMjBzdW5zZXR8ZW58MHx8fHwxNzYyNDE5ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "santorini sunset"
     }
   ]

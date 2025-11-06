@@ -69,6 +69,7 @@ export default function PackageDetailPage({ params }: { params: { slug: string }
                     phoneNumber="+1234567890" 
                     message={`Hello, I'm interested in booking the "${pkg.name}" package.`}
                     size="lg"
+                    buttonText="Book via WhatsApp"
                 />
             </div>
             
