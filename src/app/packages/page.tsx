@@ -5,6 +5,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription }
 import { Star, MapPin, Calendar, DollarSign, ArrowRight } from 'lucide-react';
 import { packages } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { WhatsAppButton } from '@/components/WhatsAppButton';
 
 export default function PackagesPage() {
   return (
@@ -18,7 +19,7 @@ export default function PackagesPage() {
             priority
             data-ai-hint="exotic travel"
         />
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
           <h1 className="text-5xl font-bold text-white tracking-tight">Our Travel Packages</h1>
         </div>
       </section>
@@ -67,10 +68,16 @@ export default function PackagesPage() {
                         <span>{pkg.duration}</span>
                     </div>
                 </CardContent>
-                <CardFooter className="bg-secondary/20 p-4">
-                  <Button asChild className="w-full" variant="ghost">
-                    <Link href={`/packages/${pkg.slug}`}>View Details <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                <CardFooter className="bg-secondary/20 p-4 grid grid-cols-2 gap-2">
+                  <Button asChild className="w-full" variant="outline">
+                    <Link href={`/packages/${pkg.slug}`}>View Details</Link>
                   </Button>
+                  <WhatsAppButton 
+                    phoneNumber="919599695872"
+                    message={`Hello, I'm interested in booking the "${pkg.name}" package.`}
+                    className="w-full"
+                    buttonText="Book Now"
+                  />
                 </CardFooter>
               </Card>
             )})}
