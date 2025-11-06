@@ -5,7 +5,7 @@ import { Footer } from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Travel Bee',
+  title: 'Tourigo',
   description: 'Your adventure starts here. Personalized travel itineraries and packages.',
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased bg-background">
+      <body className="font-body antialiased bg-background text-foreground">
         <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">{children}</main>

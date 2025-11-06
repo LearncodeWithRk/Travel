@@ -1,34 +1,10 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-1",
-      "description": "The famous blue-domed churches of Oia, Santorini, overlooking the caldera.",
-      "imageUrl": "https://images.unsplash.com/photo-1596933144889-c15043a9ddde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzYW50b3JpbmklMjBncmVlY2V8ZW58MHx8fHwxNzYyNDE5ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "santorini greece"
-    },
-    {
-      "id": "hero-2",
-      "description": "Tropical beach with crystal clear water",
-      "imageUrl": "https://images.unsplash.com/photo-1535262412227-85541e910204?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cm9waWNhbCUyMGJlYWNofGVufDB8fHx8MTc2MjMzNTA1OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tropical beach"
-    },
-    {
-      "id": "hero-3",
-      "description": "The iconic Gates of Heaven temple in Bali with a mountain view.",
-      "imageUrl": "https://images.unsplash.com/photo-1704253411612-e4deb715dcd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWxpJTIwdGVtcGxlfGVufDB8fHx8MTc2MjQxOTg2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bali temple"
-    },
-    {
-      "id": "hero-4",
-      "description": "A person relaxing on a boat",
-      "imageUrl": "https://images.unsplash.com/photo-1576253688351-f373aa77bd2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxib2F0JTIwcmVsYXh8ZW58MHx8fHwxNzYyNDIwNDg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "boat relax"
-    },
-    {
-      "id": "hero-5",
-      "description": "A view of the ocean from a cliff",
-      "imageUrl": "https://images.unsplash.com/photo-1719456490989-acd23c816cf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvY2VhbiUyMGNsaWZmfGVufDB8fHx8MTc2MjQyMDQ4OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ocean cliff"
+      "id": "hero-plane",
+      "description": "An airplane flying over a tropical sea near an island.",
+      "imageUrl": "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cmF2ZWwlMjBhZHZlbnR1cmV8ZW58MHx8fHwxNzYyODg3ODAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel adventure"
     },
     {
       "id": "category-pyramid",
@@ -47,12 +23,6 @@
       "description": "A grand mosque",
       "imageUrl": "https://images.unsplash.com/photo-1650973249918-87162b4eca34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncmFuZCUyMG1vc3F1ZXxlbnwwfHx8fDE3NjIzNzcxNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "grand mosque"
-    },
-    {
-      "id": "category-desert",
-      "description": "Sand dunes in a desert",
-      "imageUrl": "https://images.unsplash.com/photo-1629659343117-237c364e69ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGVzZXJ0JTIwZHVuZXN8ZW58MHx8fHwxNzYyNDAzMDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "desert dunes"
     },
     {
       "id": "category-tower",
@@ -143,6 +113,24 @@
       "description": "A couple enjoying the sunset in Santorini.",
       "imageUrl": "https://images.unsplash.com/photo-1509321528270-797a4f7c1485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzYW50b3JpbmklMjBzdW5zZXR8ZW58MHx8fHwxNzYyNDE5ODY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "santorini sunset"
+    },
+    {
+      "id": "blog-post-1",
+      "description": "Snowy mountains.",
+      "imageUrl": "https://images.unsplash.com/photo-1483728642387-6c351b4d1cb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbW93eSUyMG1vdW50YWlufGVufDB8fHx8MTc2Mjg5MDQ4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "snowy mountain"
+    },
+    {
+      "id": "blog-post-2",
+      "description": "Santorini town.",
+      "imageUrl": "https://images.unsplash.com/photo-1563789031959-4c02bcb40312?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYW50b3JpbmklMjB0b3dufGVufDB8fHx8MTc2Mjg5MDUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "santorini town"
+    },
+    {
+      "id": "blog-post-3",
+      "description": "Temple in Thailand.",
+      "imageUrl": "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZW1wbGUlMjB0aGFpbGFuZHxlbnwwfHx8fDE3NjI4OTA1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "temple thailand"
     }
   ]
 }

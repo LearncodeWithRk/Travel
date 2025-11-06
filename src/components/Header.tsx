@@ -9,27 +9,27 @@ import { cn } from '@/lib/utils';
 import { useState } from 'react';
 
 const navLinks = [
-  { href: '/', label: 'Home', icon: Home },
-  { href: '/destinations', label: 'Destinations', icon: Globe },
-  { href: '/packages', label: 'Products', icon: Briefcase },
+  { href: '/', label: 'Home' },
   { href: '/about', label: 'About Us' },
+  { href: '/destinations', label: 'Destination' },
+  { href: '/packages', label: 'Tours' },
   { href: '/contact', label: 'Contact' },
+  { href: '/blog', label: 'Blog' },
 ];
 
 export function Header() {
   const pathname = usePathname();
   const [isSheetOpen, setSheetOpen] = useState(false);
 
-  const NavLink = ({ href, label, icon: Icon }: { href: string; label: string; icon?: React.ElementType }) => (
+  const NavLink = ({ href, label }: { href: string; label: string; }) => (
     <Link
       href={href}
       className={cn(
-        "text-sm font-medium transition-colors hover:text-primary flex items-center gap-2",
-        pathname === href ? "text-primary" : "text-muted-foreground"
+        "text-sm font-medium transition-colors hover:text-primary",
+        pathname === href ? "text-primary" : ""
       )}
       onClick={() => setSheetOpen(false)}
     >
-      {Icon && <Icon className="h-4 w-4" />}
       {label}
     </Link>
   );
@@ -39,7 +39,7 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="text-2xl font-bold text-primary">Travel Bee</span>
+            <span className="text-2xl font-bold">Tourigo</span>
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-end gap-4">
@@ -48,7 +48,7 @@ export function Header() {
               <NavLink key={link.href} {...link} />
             ))}
           </nav>
-          <Button>Get Started</Button>
+          <Button>Sign In</Button>
           <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" className="md:hidden">
@@ -59,7 +59,7 @@ export function Header() {
             <SheetContent side="left">
               <div className="flex flex-col space-y-4 p-4">
                 <Link href="/" className="mb-4 flex items-center space-x-2" onClick={() => setSheetOpen(false)}>
-                  <span className="text-2xl font-bold text-primary">Travel Bee</span>
+                  <span className="text-2xl font-bold">Tourigo</span>
                 </Link>
                 {navLinks.map((link) => (
                   <NavLink key={link.href} {...link} />
