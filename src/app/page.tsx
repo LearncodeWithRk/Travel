@@ -13,6 +13,7 @@ import {
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, ChevronLeft, ChevronRight, MapPin, Star, Heart, Trophy, Briefcase, Bot, User, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
+import { WhatsAppButton } from '@/components/WhatsAppButton';
 
 const categoryImages = [
   { id: 'category-pyramid', name: 'Pyramid', imageHint: 'pyramid giza' },
@@ -82,52 +83,34 @@ export default function Home() {
         )}
         <div className="absolute inset-0 bg-black/30" />
         <div className="container relative z-10 mx-auto flex h-full items-center px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="max-w-xl text-white">
               <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
-                Uncover Paradise Journey into{' '}
-                <span className="text-accent">Spectacular</span>
+                Your Adventure Starts Here
               </h1>
-              <Button className="mt-8">Discover More</Button>
+              <p className="mt-4 text-lg">Discover your next great adventure, become an explorer to get started.</p>
+              <Button asChild className="mt-8" size="lg">
+                <Link href="/destinations">Discover More</Link>
+              </Button>
             </div>
             <div className="hidden md:block">
               <Card>
                 <CardContent className="p-6">
-                  <form className="space-y-4">
+                  <div className="space-y-4 text-center">
                     <h3 className="text-lg font-semibold">
-                      Find Your Next Destination
+                      Book Your Dream Trip
                     </h3>
-                    <div>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Destination" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="bali">Bali</SelectItem>
-                          <SelectItem value="paris">Paris</SelectItem>
-                          <SelectItem value="kyoto">Kyoto</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div>
-                      <Input type="date" />
-                    </div>
-                    <div>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Travel Type" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="adventure">Adventure</SelectItem>
-                          <SelectItem value="relax">Relaxation</SelectItem>
-                          <SelectItem value="cultural">Cultural</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <Button className="w-full" type="submit">
-                      Search
-                    </Button>
-                  </form>
+                    <p className="text-sm text-muted-foreground">
+                      Have questions or ready to book? Chat with our travel experts on WhatsApp!
+                    </p>
+                    <WhatsAppButton
+                      phoneNumber="+1234567890"
+                      message="Hello Tourigo! I'd like to book a trip."
+                      className="w-full"
+                      size="lg"
+                      buttonText="Book via WhatsApp"
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </div>
