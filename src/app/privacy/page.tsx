@@ -1,3 +1,4 @@
+
 export default function PrivacyPage() {
   return (
     <div className="bg-background">
@@ -9,21 +10,21 @@ export default function PrivacyPage() {
           <h2>1. Information We Collect</h2>
           <p>
             We collect information you provide directly to us when you use our services. This includes:
-            <ul>
-              <li><strong>Personal Preferences:</strong> When you use our AI Itinerary Generator, we collect information about your destination, dates, budget, and interests to create a personalized plan.</li>
-              <li><strong>Contact Information:</strong> When you contact us or book a service, we may collect your name, email address, and phone number.</li>
-            </ul>
           </p>
+          <ul>
+            <li><strong>Personal Preferences:</strong> When you use our AI Itinerary Generator, we collect information about your destination, dates, budget, and interests to create a personalized plan.</li>
+            <li><strong>Contact Information:</strong> When you contact us or book a service, we may collect your name, email address, and phone number.</li>
+          </ul>
           
           <h2>2. How We Use Your Information</h2>
           <p>
             We use the information we collect to:
-            <ul>
-                <li>Provide, maintain, and improve our services, including the AI Itinerary Generator.</li>
-                <li>Communicate with you about products, services, offers, and events.</li>
-                <li>Respond to your comments, questions, and requests.</li>
-            </ul>
           </p>
+          <ul>
+              <li>Provide, maintain, and improve our services, including the AI Itinerary Generator.</li>
+              <li>Communicate with you about products, services, offers, and events.</li>
+              <li>Respond to your comments, questions, and requests.</li>
+          </ul>
 
           <h2>3. Data Storage and AI Processing</h2>
           <p>
