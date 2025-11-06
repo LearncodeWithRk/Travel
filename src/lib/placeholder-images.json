@@ -131,6 +131,12 @@
       "description": "Temple in Thailand.",
       "imageUrl": "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZW1wbGUlMjB0aGFpbGFuZHxlbnwwfHx8fDE3NjI4OTA1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "temple thailand"
+    },
+    {
+      "id": "blog-post-4",
+      "description": "A boat navigating a river in the lush Amazon rainforest.",
+      "imageUrl": "https://images.unsplash.com/photo-1521708259169-7d53a15f4327?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbWF6b24lMjByYWluZm9yZXN0fGVufDB8fHx8MTc2MjkwMDAwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "amazon rainforest"
     }
   ]
 }

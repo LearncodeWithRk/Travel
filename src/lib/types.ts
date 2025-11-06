@@ -21,3 +21,19 @@ export type Package = {
   exclusions: string[];
   itinerary: { day: number; title: string, description: string }[];
 };
+
+export type BlogPost = {
+    id: number;
+    slug: string;
+    title: string;
+    excerpt: string;
+    content: string;
+    author: string;
+    date: string;
+    image: {
+        id: string;
+        description: string;
+        imageUrl: string;
+        imageHint: string;
+    } | undefined;
+};

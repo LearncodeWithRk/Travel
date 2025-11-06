@@ -3,37 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { ArrowRight, Calendar, User } from 'lucide-react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-
-const blogPosts = [
-  {
-    id: 1,
-    slug: 'top-10-winter-destinations',
-    title: 'Top 10 Winter Destinations for 2025',
-    excerpt: 'Discover breathtaking snowy landscapes and cozy retreats. From the Swiss Alps to the slopes of Aspen, find your perfect winter getaway.',
-    author: 'Alex Johnson',
-    date: 'October 26, 2024',
-    image: PlaceHolderImages.find(p => p.id === 'blog-post-1'),
-  },
-  {
-    id: 2,
-    slug: 'a-guide-to-santorini',
-    title: 'A First-Timer\'s Guide to Santorini',
-    excerpt: 'Planning a trip to the iconic Greek island? Here are the must-see spots, best foods to try, and tips for navigating Santorini like a pro.',
-    author: 'Maria Garcia',
-    date: 'October 22, 2024',
-    image: PlaceHolderImages.find(p => p.id === 'blog-post-2'),
-  },
-  {
-    id: 3,
-    slug: 'exploring-ancient-temples-thailand',
-    title: 'Exploring the Ancient Temples of Thailand',
-    excerpt: 'Journey through history as we explore the majestic temples of Ayutthaya and Sukhothai. A spiritual and cultural adventure awaits.',
-    author: 'Sam Chen',
-    date: 'October 18, 2024',
-    image: PlaceHolderImages.find(p => p.id === 'blog-post-3'),
-  },
-];
+import { blogPosts } from '@/lib/data';
 
 export default function BlogPage() {
   return (
