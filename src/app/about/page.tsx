@@ -17,7 +17,7 @@ export default function AboutPage() {
             priority
             data-ai-hint="scenic landscape"
         />
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
           <h1 className="text-5xl font-bold text-white tracking-tight">About Tourigo</h1>
         </div>
       </section>
@@ -40,9 +40,6 @@ export default function AboutPage() {
                 <h2 className="text-3xl md:text-4xl font-bold">Making Travel Simple, Personal, and Unforgettable</h2>
                 <p className="text-muted-foreground text-lg">
                     We believe travel is more than just seeing new places. It's about experiencing new cultures, creating lifelong memories, and discovering yourself along the way. Tourigo was born from a passion for exploration and a desire to make trip planning as exciting as the journey itself.
-                </p>
-                <p className="text-muted-foreground">
-                    We leverage cutting-edge AI to craft bespoke itineraries while our team of travel experts ensures every detail is perfect. Our mission is to be the most trusted companion for modern travelers, offering innovative tools and curated experiences that inspire a lifetime of adventure.
                 </p>
             </div>
           </div>
