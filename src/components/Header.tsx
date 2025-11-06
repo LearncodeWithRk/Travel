@@ -4,7 +4,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, Briefcase, Home, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
 
@@ -20,12 +27,12 @@ export function Header() {
   const pathname = usePathname();
   const [isSheetOpen, setSheetOpen] = useState(false);
 
-  const NavLink = ({ href, label }: { href: string; label: string; }) => (
+  const NavLink = ({ href, label }: { href: string; label: string }) => (
     <Link
       href={href}
       className={cn(
-        "text-sm font-medium transition-colors hover:text-primary",
-        pathname === href ? "text-primary" : ""
+        'text-sm font-medium transition-colors hover:text-primary',
+        pathname === href ? 'text-primary' : ''
       )}
       onClick={() => setSheetOpen(false)}
     >
@@ -55,8 +62,18 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
+              <SheetHeader className="sr-only">
+                <SheetTitle>Mobile Menu</SheetTitle>
+                <SheetDescription>
+                  Navigation links for Tourigo website.
+                </SheetDescription>
+              </SheetHeader>
               <div className="flex flex-col space-y-4 p-4">
-                <Link href="/" className="mb-4 flex items-center space-x-2" onClick={() => setSheetOpen(false)}>
+                <Link
+                  href="/"
+                  className="mb-4 flex items-center space-x-2"
+                  onClick={() => setSheetOpen(false)}
+                >
                   <span className="text-2xl font-bold">Tourigo</span>
                 </Link>
                 {navLinks.map((link) => (
