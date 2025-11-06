@@ -70,7 +70,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="relative h-auto w-full py-16 md:h-[80vh] md:py-0">
+      <section className="relative h-auto w-full py-16 md:py-0 md:h-[80vh] ">
         {heroImage && (
           <Image
             src={heroImage.imageUrl}
@@ -84,7 +84,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/30" />
         <div className="container relative z-10 mx-auto flex h-full items-center px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="max-w-xl text-white">
+            <div className="max-w-xl text-white text-center md:text-left">
               <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
                 Your Adventure Starts Here
               </h1>
@@ -93,7 +93,7 @@ export default function Home() {
                 <Link href="/destinations">Discover More</Link>
               </Button>
             </div>
-            <div className="block">
+             <div className="md:max-w-md md:ml-auto w-full">
               <Card>
                 <BookingForm />
               </Card>
