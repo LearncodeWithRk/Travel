@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Input } from '@/components/ui/input';
 import {
   Select,
   SelectContent,
@@ -14,6 +13,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, ChevronLeft, ChevronRight, MapPin, Star, Heart, Trophy, Briefcase, Bot, User, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
+import BookingForm from '@/components/BookingForm';
 
 const categoryImages = [
   { id: 'category-pyramid', name: 'Pyramid', imageHint: 'pyramid giza' },
@@ -95,23 +95,7 @@ export default function Home() {
             </div>
             <div className="hidden md:block">
               <Card>
-                <CardContent className="p-6">
-                  <div className="space-y-4 text-center">
-                    <h3 className="text-lg font-semibold">
-                      Book Your Dream Trip
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      Have questions or ready to book? Chat with our travel experts on WhatsApp!
-                    </p>
-                    <WhatsAppButton
-                      phoneNumber="+1234567890"
-                      message="Hello Tourigo! I'd like to book a trip."
-                      className="w-full"
-                      size="lg"
-                      buttonText="Book via WhatsApp"
-                    />
-                  </div>
-                </CardContent>
+                <BookingForm />
               </Card>
             </div>
           </div>
