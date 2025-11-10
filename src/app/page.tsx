@@ -205,7 +205,7 @@ export default function Home() {
               return (
                 <Card
                   key={dest.slug}
-                  className="overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-xl group"
+                  className="overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-xl group flex flex-col"
                 >
                   {image && (
                     <div className="overflow-hidden">
@@ -219,7 +219,7 @@ export default function Home() {
                       />
                     </div>
                   )}
-                  <CardContent className="p-4">
+                  <CardContent className="p-4 flex-grow">
                     <h3 className="text-xl font-bold">{dest.name}</h3>
                     <div className="mt-1 flex items-center text-sm text-muted-foreground">
                       <MapPin className="mr-1 h-4 w-4" />
