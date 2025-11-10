@@ -85,8 +85,7 @@ export default function ItineraryForm() {
   }, [state, toast]);
 
   return (
-    <form action={formAction}>
-      <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
+    <form action={formAction} className="mt-12 grid md:grid-cols-2 gap-12 items-start">
         <Card>
           <CardHeader>
             <CardTitle>Travel Preferences</CardTitle>
@@ -126,7 +125,6 @@ export default function ItineraryForm() {
         <div className="h-full">
             <ItineraryResult state={state} />
         </div>
-      </div>
     </form>
   );
 }
