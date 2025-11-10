@@ -26,9 +26,7 @@ function SubmitButton() {
   );
 }
 
-function ItineraryResult({ state }: { state: ItineraryFormState }) {
-    const { pending } = useFormStatus();
-
+function ItineraryResult({ state, pending }: { state: ItineraryFormState, pending: boolean }) {
     return (
         <Card className="min-h-full">
             <CardHeader>
@@ -69,6 +67,53 @@ function ItineraryResult({ state }: { state: ItineraryFormState }) {
     );
 }
 
+function ItineraryFormContent({ state }: { state: ItineraryFormState }) {
+  const { pending } = useFormStatus();
+
+  return (
+    <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
+      <Card>
+        <CardHeader>
+          <CardTitle>Travel Preferences</CardTitle>
+          <CardDescription>Fill in the details below to get started.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <Label htmlFor="destination">Destination</Label>
+              <Input id="destination" name="destination" placeholder="e.g., Paris, France" required />
+              {state.errors?.destination && <p className="text-sm text-destructive">{state.errors.destination[0]}</p>}
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="dates">Travel Dates</Label>
+              <Input id="dates" name="dates" placeholder="e.g., July 15 - July 22, 2024" required />
+              {state.errors?.dates && <p className="text-sm text-destructive">{state.errors.dates[0]}</p>}
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="budget">Budget</Label>
+              <Input id="budget" name="budget" placeholder="e.g., $2000 - $3000" required />
+              {state.errors?.budget && <p className="text-sm text-destructive">{state.errors.budget[0]}</p>}
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="interests">Interests</Label>
+              <Textarea id="interests" name="interests" placeholder="e.g., museums, hiking, fine dining, history" required />
+              {state.errors?.interests && <p className="text-sm text-destructive">{state.errors.interests[0]}</p>}
+            </div>
+            
+            <SubmitButton />
+          </div>
+        </CardContent>
+      </Card>
+      
+      <div className="h-full">
+          <ItineraryResult state={state} pending={pending} />
+      </div>
+    </div>
+  );
+}
 
 export default function ItineraryForm() {
   const [state, formAction] = useFormState(createItinerary, initialState);
@@ -85,46 +130,8 @@ export default function ItineraryForm() {
   }, [state, toast]);
 
   return (
-    <form action={formAction} className="mt-12 grid md:grid-cols-2 gap-12 items-start">
-        <Card>
-          <CardHeader>
-            <CardTitle>Travel Preferences</CardTitle>
-            <CardDescription>Fill in the details below to get started.</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-6">
-              <div className="space-y-2">
-                <Label htmlFor="destination">Destination</Label>
-                <Input id="destination" name="destination" placeholder="e.g., Paris, France" required />
-                {state.errors?.destination && <p className="text-sm text-destructive">{state.errors.destination[0]}</p>}
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="dates">Travel Dates</Label>
-                <Input id="dates" name="dates" placeholder="e.g., July 15 - July 22, 2024" required />
-                {state.errors?.dates && <p className="text-sm text-destructive">{state.errors.dates[0]}</p>}
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="budget">Budget</Label>
-                <Input id="budget" name="budget" placeholder="e.g., $2000 - $3000" required />
-                {state.errors?.budget && <p className="text-sm text-destructive">{state.errors.budget[0]}</p>}
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="interests">Interests</Label>
-                <Textarea id="interests" name="interests" placeholder="e.g., museums, hiking, fine dining, history" required />
-                {state.errors?.interests && <p className="text-sm text-destructive">{state.errors.interests[0]}</p>}
-              </div>
-              
-              <SubmitButton />
-            </div>
-          </CardContent>
-        </Card>
-        
-        <div className="h-full">
-            <ItineraryResult state={state} />
-        </div>
+    <form action={formAction}>
+      <ItineraryFormContent state={state} />
     </form>
   );
 }
